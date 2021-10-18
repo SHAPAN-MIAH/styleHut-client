@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.CategorySection {
+  margin-top: 60px;
+}
+.category-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.category-heading h1 {
+  font-weight: 600;
+  color: #1b1464;
+  margin-bottom: 30px;
+}
+
+.categoryDiv {
+  height: 600px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.categoryDiv img {
+  transition: all 0.3s ease-in;
+  height: 100%;
+}
+
+.SubCategoryDiv {
+  height: 290px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #edf0f5;
+}
+.SubCategoryDiv img {
+  height: auto;
+}
+
+.man-hoodie img,
+.watch img {
+  margin-top: -50px;
+}
+
+.man-hoodie,
+.womans,
+.man,
+.watch,
+.tops,
+.shoes {
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  position: relative;
+}
+
+.man-hoodie:hover img,
+.womans:hover img,
+.man:hover img,
+.watch:hover img,
+.tops:hover img,
+.shoes:hover img {
+  transform: scale(1.05);
+  /* overflow: hidden; */
+}
+
+.man-hoodie::before,
+.womans::before,
+.man::before,
+.watch::before,
+.tops::before,
+.shoes::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(209, 209, 209, 0.075);
+  /* border-radius: 100%; */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.man-hoodie:hover:before,
+.womans:hover::before,
+.man:hover::before,
+.watch:hover::before,
+.tops:hover::before,
+.shoes:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.newArrival-container {
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.Arrival-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #1b1464;
+}
+.ArrivalsDiv {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ArrivalsDiv img {
+  transition: all 0.3s ease-in;
+}
+.ArrivalsDiv:hover img {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.arrival-shoes,
+.arrival-Bra {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.arrival-shoes img,
+.arrival-Bra img {
+  transition: all 0.3s ease-in;
+}
+.arrival-shoes:hover img,
+.arrival-Bra:hover img {
+  transform: scale(1.05);
+}
+.arrival-Bra {
+  margin-bottom: 20px;
+  height: 265px;
+}
+.arrival-Bra img {
+  /* margin-bottom: 20px; */
+  height: auto;
+}
+.arrival-shoes2 {
+  margin-top: 23px;
+  height: 262px;
+}
+.arrival-shoes2 img {
+  height: auto;
+  margin-top: -180px;
+}
+
+.ArrivalsDiv3 {
+  background-color: #edf0f5;
+  /* background-color: #eaeaea; */
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ArrivalsDiv3 img {
+  height: auto;
+}
+
+.ArrivalsDiv::before,
+.arrival-Bra::before,
+.arrival-shoes::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(209, 209, 209, 0.075);
+  /* border-radius: 100%; */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.ArrivalsDiv:hover:before,
+.ArrivalsDiv2 .arrival-Bra:hover::before,
+.ArrivalsDiv2 .arrival-shoes:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}

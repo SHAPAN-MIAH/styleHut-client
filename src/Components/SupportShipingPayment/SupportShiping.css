@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.voucherShipSupPay {
+  /* margin: 100px 0px; */
+}
+.voucherShipSupPay-container {
+  margin-top: 70px;
+  background-color: #edf0f5;
+  padding: 30px 0px;
+}
+.voucherDiv,
+.shippingDiv,
+.supportDiv,
+.paymentDiv {
+  text-align: center;
+  /* margin: 50px 0px; */
+}
+.voucherDiv h3,
+.shippingDiv h3,
+.supportDiv h3,
+.paymentDiv h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+.voucherDiv h3 span,
+.shippingDiv h3 span,
+.supportDiv h3 span,
+.paymentDiv h3 span {
+  font-size: 35px;
+  color: #7a7a7a;
+}

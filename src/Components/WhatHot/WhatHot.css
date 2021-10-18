@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.saleOffSection {
+  /* background-color: #edf0f5; */
+  margin: 60px 0px;
+}
+/* .carousel, */
+.saleOff {
+  background-color: #edf0f5;
+  /* background-color: #f4f4f6; */
+}
+.hotHeading h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1b1464;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.saleOff {
+  height: 350px;
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.subscribeSection {
+  font-family: "Poppins", sans-serif;
+  /* margin: 150px 0px; */
+  padding: 80px 0px;
+}
+
+.NewsletterDiv {
+  text-align: center;
+  /* margin-bottom: 100px; */
+}
+#subscribeBtn {
+  border: 1px solid #fe3060;
+  background-color: #fe3060;
+  padding: 10px 40px;
+  color: white;
+  transition: all 0.3s;
+}
+#subscribeBtn:hover {
+  border: 1px solid #1b1464;
+  background-color: #1b1464;
+}
+.NewsletterDiv input {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  width: 350px;
+  outline: none;
+}
+.contactDiv {
+  text-align: center;
+}
+.contactDiv h1,
+.NewsletterDiv h1 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1b1464;
+  margin-bottom: 15px;
+}
+.contactDiv h6,
+.NewsletterDiv h6 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 25px;
+}
+.contactDiv a {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  font-size: 15px;
+  color: gray;
+  border: 0.1px solid gray;
+  border-radius: 100%;
+  padding: 10px 14px;
+}
+.contactDiv a:hover {
+  color: #fe3060;
+  border: 0.5px solid #fe3060;
+}
+.socialDiv {
+  margin-top: 38px;
+}

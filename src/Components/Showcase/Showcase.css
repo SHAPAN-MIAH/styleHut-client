@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&family=PT+Sans+Caption&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Nova+Flat&family=PT+Sans+Caption&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.sliderContainer {
+  /* font-family: "PT Sans Caption", sans-serif; */
+  /* font-family: "Nova Flat", cursive; */
+  /* font-family: "Baloo Bhai 2", cursive; */
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  background-color: #edf0f5;
+  height: 550px;
+  overflow: hidden;
+}
+.sliderOne h1,
+.sliderTwo h1,
+.sliderThree h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #1b1464;
+}
+.sliderOne p,
+.sliderTwo p,
+.sliderThree p {
+  color: #696969;
+}
+.braImg {
+  width: 580px;
+  margin-left: -70px;
+  position: relative;
+  margin-top: 10px;
+}
+.winterDressImg {
+  width: auto;
+  height: 400px;
+  margin-left: -40px;
+  position: relative;
+}
+
+/*color: #f3f2ef */
+.braDiv h6 {
+  margin-left: -180px;
+  color: #1b1464;
+}
+.winterDressDiv h6 {
+  margin-left: -60px !important;
+  color: #1b1464;
+}
+.braDiv,
+.winterDressDiv {
+  background-color: #edf0f5;
+  /* background-color: #f4f4f6; */
+  height: 265px;
+  overflow: hidden;
+  display: flex;
+  /* font-family: "PT Sans Caption", sans-serif; */
+  /* font-family: "Baloo Bhai 2", cursive; */
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+.braDiv::before,
+.winterDressDiv::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(209, 209, 209, 0.075);
+  /* border-radius: 100%; */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.braDiv:hover:before,
+.winterDressDiv:hover:before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+
+.braDiv {
+  margin-bottom: 20px;
+}
+/* .winterDressDiv h6 {
+  margin-left: -20px;
+} */
+.ShoesDiv {
+  margin-top: 100px;
+}
+#shopBtn {
+  border: none;
+  padding: 10px 50px;
+  background-color: #fe3060;
+  color: #edf0f5;
+  transition: all 0.3s;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+#shopBtn:hover {
+  background-color: #1b1464;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+.sliderOne,
+.sliderTwo,
+.sliderThree {
+  margin-left: 100px;
+}
+
+.dressImg,
+.bagImg,
+.nacklaceImg {
+  width: 500px;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}

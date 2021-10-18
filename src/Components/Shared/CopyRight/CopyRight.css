@@ -1,0 +1,21 @@
+.copyrightDiv small {
+  /* font-size: 15px; */
+  color: #777777;
+  padding-top: 20px;
+}
+.copyrightDiv span {
+  font-size: 15px;
+  color: #777777;
+  align-items: center;
+  justify-content: center;
+}
+.paymentCardDiv {
+  font-size: 20px;
+  color: gray;
+}
+.paymentCardDiv span {
+  font-size: 35px;
+  color: rgb(160, 160, 160);
+  margin: 0px 7px;
+  float: right;
+}
