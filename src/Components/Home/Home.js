@@ -27,21 +27,14 @@ const Home = () => {
       <FeaturedProducts />
       <SupportShiping/>
       <NewArrivals/>
-      
-      {/* <WhatHot/> */}
       <SaleOff/>
       <NewsletterContact/>
       <Footer/>
       <CopyRight/>
-      {/* <ProductCollection/> */}
+     
       
       
-      
-      {/* <Footer/> */}
-      {/* <SweaterDetailsPage/> */}
-      {/* <SweaterCollection/>
-      <HoodiesCollection/>
-      <AddProduct/> */}
+      {/* <AddProduct/> */}
     </>
   );
 };

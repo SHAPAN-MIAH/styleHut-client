@@ -1,5 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.sweaterCollection-heading,
+.sweaterCollection-path {
+  font-family: "Poppins", sans-serif;
+}
+.sweaterCollection-path {
+  margin-left: auto;
+}
+.sweaterCollection-path a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+.sweaterCollection-path a:hover {
+  color: #fe3060;
+}
+
+.sweaterCollection-heading h3 {
+  color: #1b1464;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sweaterCollection-heading p {
+  color: rgb(88, 88, 88);
+}
+
 .sweaterCollections {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 25px;
+  font-family: "Poppins", sans-serif;
 }

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.ShoeDiv {
+  height: 340px;
+  position: relative;
+}
+.shoes-name {
+  color: rgb(88, 88, 88);
+  font-size: 15px;
+}
+.price {
+  color: #fe3060;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.shoesImg {
+  height: 330px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.shoesImg::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(209, 209, 209, 0.075);
+
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.shoesImg:hover:before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+
+.interactionDiv {
+  position: absolute;
+  margin-top: -320px;
+  transform: translateX(21%);
+  transition: all .5s ease-in-out 0s;
+}
+.interaction-container {
+  color: rgb(88, 88, 88);
+  margin-bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+}
+.interaction-container:hover {
+  color: #fe3060;
+}
+.interactionDiv small {
+  width: 121px;
+  background-color: rgba(240, 248, 255, 0.808);
+  padding: 5px 10px;
+  margin-left: auto;
+  text-align: end;
+  opacity: 0;
+  transition: all .5s ease-in-out 0s;
+}
+
+.interactionIcon-div {
+  width: 35px;
+  height: 35px;
+  background-color: aliceblue;
+  text-align: center;
+  margin-left: auto;
+  position: relative;
+  transition: all .5s ease-in-out 0s;
+}
+.interactionIcon {
+  position: absolute;
+  font-size: 17px;
+  left: 3px;
+  padding: 5px;
+  color: #616161;
+}
+.interactionIcon:hover {
+  color: #fe3060;
+}
+.ShoeDiv:hover .interaction-container {
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.ShoeDiv:hover .interactionDiv {
+  margin-top: -250px;
+}
+.ShoeDiv:hover .interactionDiv small {
+  opacity: 1;
+}

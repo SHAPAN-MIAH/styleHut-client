@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.nav-menu {
+  padding: 0px 7px;
+}
+.nav-menu:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  width: 250px;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown-menu li {
+  font-size: 14px;
+}
+.dropdown-menu li span {
+  transition: all 0.5s;
+}
+.dropdown-menu li:hover span {
+  margin-left: 15px;
+}

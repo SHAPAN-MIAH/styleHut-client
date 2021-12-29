@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import logo from '../../../assets/images/stylehut-logo3.png';
 import './Footer.css'
+import NewArrivals from './../../NewArrivals/NewArrivals';
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
             </div>
             <div className="col-md-3">
               <h1>Products</h1>
-              <a href=""><p>New products</p></a>
+              <a href=""><p>New Arrivals</p></a>
               <a href=""><p>Best sales</p></a>
               <a href=""><p>Mens</p></a>
               <a href=""><p>Women</p></a>

@@ -1,5 +1,14 @@
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
+import NewsletterContact from '../../NewsletterContact/NewsletterContact';
+import CopyRight from '../../Shared/CopyRight/CopyRight';
+import Footer from '../../Shared/Footer/Footer';
+import Nav from '../../Shared/Nav';
+import SideBar from '../../Shared/SideBar/SideBar';
+import Topbar from '../../Shared/Topbar';
+import SupportShiping from '../../SupportShipingPayment/SupportShiping';
+import axios from 'axios';
 import Hoodie from './Hoodie';
 import './HoodiesCollection.css'
 
@@ -123,6 +132,18 @@ const hoodieCollections = [
   
 ]
 
+const lasthoodie = [
+  {
+    category: "Hoodie",
+    name: "Wine-track-star-velvet-hoodie",
+    price: 130,
+    imagesUrl: {
+      imageUrl1: "https://i.ibb.co/1L7XkZq/wine-track-star-velvet-hoodie.jpg",
+      imageUrl2: "https://i.ibb.co/Vmq49wY/wine-track-star-velvet-hoodie-1.jpg"
+    }
+  }
+]
+
 const HoodiesCollection = () => {
 
   // const handleAddProduct = () => {
@@ -141,21 +162,57 @@ const HoodiesCollection = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div class="row">
-        <div className="col-md-2">
+    <>
+      <div>
+        <Topbar/>
+        <Nav/>
+        <div className="container">
+          <div class="row">
+            <div className="col-md-3">
+              <div className="sidebar-container">
+                <SideBar/>
+              </div>
+            </div>
+            <div className="col-md-9">
+              <div className="mb-4 hoodieCollection-heading">
+                  <div className="d-flex shoes-heading">
+                  <h3>Hoodie</h3> <span className="m">11 Products</span>
+                    <div className="pb-3 hoodieCollection-path">
+                      <small><span><a href="/">Home</a></span> / <span><a href="/women/hoodie">Women <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span> Hoodie</a></span></small>
+                    </div>
+                  </div>
+                  <div className="Filter-container d-flex">
+                  <select name="Filter" id="Filter">
+                    <option className="option" value="">New Arrivals</option>
+                    <option className="option" value="">Most Popular</option>
+                    <option className="option" value="">High Price</option>
+                    <option className="option" value="">Low Price</option>
+                    
+                  </select>
 
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input type="checkbox" className="form-check-input shadow-none" name="" id="" value="checkedValue"/>
+                      Ship in 24 hours
+                    </label>
+                  </div>
+                  </div>
+                </div>
+              <div className="hoodiesCollections">
+                {
+                  hoodies.map(hoodie => <Hoodie key={hoodie.key} hoodie={hoodie}></Hoodie>)
+                }
+              </div>
+            </div>
+          </div>
+          {/* <button onClick={handleAddProduct}>add products</button> */}
         </div>
-        <div className="col-md-10">
-        <div className="hoodiesCollections">
-          {
-           hoodies.map(hoodie => <Hoodie key={hoodie.key} hoodie={hoodie}></Hoodie>)
-          }
-         </div>
-        </div>
+        <SupportShiping/>
+        <NewsletterContact/>
+        <Footer/>
+        <CopyRight/>
       </div>
-      {/* <button onClick={handleAddProduct}>add products</button> */}
-    </div>
+    </>
   );
 };
 

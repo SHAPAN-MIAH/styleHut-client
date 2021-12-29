@@ -66,9 +66,9 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-.ArrivalsDiv3 img {
-  height: auto;
-}
+/* .ArrivalsDiv3 img {
+  height: ;
+} */
 
 .ArrivalsDiv::before,
 .arrival-Bra::before,

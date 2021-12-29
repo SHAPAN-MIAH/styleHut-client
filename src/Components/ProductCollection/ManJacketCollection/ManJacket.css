@@ -1,0 +1,55 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  .jacketDiv {
+    /* height: 340px; */
+  }
+  .jacket-name {
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+  }
+  
+  .price {
+    color: #fe3060;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .jacketImg {
+    height: 297px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .jacketImg::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(209, 209, 209, 0.075);
+    /* border-radius: 100%; */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .jacketImg:hover:before {
+    -webkit-animation: circle 0.75s;
+    animation: circle 0.75s;
+  }
+  
+  .jacketDiv:hover .interaction-container {
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+  .jacketDiv:hover .interactionDiv {
+    margin-top: -225px;
+  }
+  .jacketDiv:hover .interactionDiv small {
+    opacity: 1;
+  }
+  

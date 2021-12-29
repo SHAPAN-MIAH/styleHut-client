@@ -2,6 +2,7 @@ import React from 'react';
 import Swterimg from "../../assets/images/product-clothes-15_ccda53b5-213e-4168-82fd-6d02c77dac26.jpg";
 import Braimg from "../../assets/images/sand-tell-me-when-underbust-knit-bralette-crop-top_adobespark.png";
 import './NewArrivals.css'
+import jacket from '../../assets/images/ash jacket.jpg'
 
 const NewArrivals = () => {
   return (
@@ -31,7 +32,7 @@ const NewArrivals = () => {
           </div>
           <div className="col-md-4">
             <div className="ArrivalsDiv ArrivalsDiv3">
-            <img src={Braimg} alt=""/>
+            <img src={jacket} alt=""/>
             {/* <img src='https://cdn.shopify.com/s/files/1/0326/6517/4152/products/11_360x.jpg?v=1623831496' alt=""/> */}
             </div>
           </div>

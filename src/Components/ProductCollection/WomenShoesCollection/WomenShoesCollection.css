@@ -1,0 +1,72 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.shoesCollection-heading,
+.shoesCollection-path {
+  font-family: "Poppins", sans-serif;
+}
+.shoesCollection-path {
+  margin-left: auto;
+  margin-top: 2px;
+}
+.shoesCollection-path a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: gray;
+  margin-left: auto;
+}
+.shoesCollection-path a:hover {
+  color: #fe3060;
+}
+.shoes-heading {
+  background-color: rgb(240, 240, 240);
+  padding: 8px 20px;
+  padding-top: 18px;
+  margin-bottom: 20px;
+}
+.shoes-heading span {
+  margin-left: 20px;
+  margin-top: 7px;
+  color: rgb(88, 88, 88);
+}
+.shoesCollection-heading h3 {
+  color: #1b1464;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  /* margin-top: 5px; */
+}
+.shoesCollection-heading p {
+  color: rgb(88, 88, 88);
+}
+#Filter {
+  width: 150px;
+  outline: none;
+  border: 0.5px solid gainsboro;
+  padding: 5px 0px;
+  color: rgb(88, 88, 88);
+  cursor: pointer;
+}
+#Filter .shoes-option:hover {
+  background-color: #1b1464;
+}
+.form-check {
+  margin-left: 30px;
+  margin-top: 8px;
+  color: rgb(88, 88, 88);
+}
+.form-check-input {
+  border-radius: 0px !important;
+}
+.shoesCollections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}

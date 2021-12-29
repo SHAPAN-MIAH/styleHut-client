@@ -1,8 +1,17 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import NewsletterContact from '../../NewsletterContact/NewsletterContact';
+import CopyRight from '../../Shared/CopyRight/CopyRight';
+import Footer from '../../Shared/Footer/Footer';
+import Nav from '../../Shared/Nav';
+import Topbar from '../../Shared/Topbar';
+import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import Sweater from './Sweater';
 import "./SweaterCollection.css"
 // import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import SideBar from '../../Shared/SideBar/SideBar';
 
 const sweatersCollection = [
   {
@@ -421,24 +430,60 @@ const SweaterCollection = () => {
   //     })
   // }
 
-
   return (
-    <div className="container">
-      <div class="row">
-        <div className="col-md-2">
+    <>
+        <div>
+        <Topbar/>
+        <Nav/>
+          <div className="container">
+            <div class="row">
+              <div className="col-md-3">
+                <div className="sidebar-container">
+                  <SideBar/>
+                </div>
+              </div>
+              <div className="col-md-9">
 
-        </div>
-        <div className="col-md-10">
-        <div className="sweaterCollections">
-          {
-           sweater.map(sweaterInfo => <Sweater key={sweaterInfo.key} sweaterInfo={sweaterInfo}></Sweater>)
-          }
-         </div>
-        </div>
-      </div>
+                <div className="mb-4 sweaterCollection-heading">
+                  <div className="d-flex shoes-heading">
+                    <h3>Sweater</h3> <span className="m">39 Products</span>
+                    <div className="sweaterCollection-path">
+                      <small><span><a href="/">Home</a></span> / <span><a href="/women/sweater">Women <span><FontAwesomeIcon icon={faLongArrowAltRight} /></span> Sweater</a></span> </small>
+                    </div>
+                  </div>
+                  <div className="Filter-container d-flex">
+                  <select name="Filter" id="Filter">
+                    <option className="option" value="">New Arrivals</option>
+                    <option className="option" value="">Most Popular</option>
+                    <option className="option" value="">High Price</option>
+                    <option className="option" value="">Low Price</option>
+                    
+                  </select>
+
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input type="checkbox" className="form-check-input shadow-none" name="" id="" value="checkedValue"/>
+                      Ship in 24 hours
+                    </label>
+                  </div>
+                  </div>
+                </div>
+                <div className="sweaterCollections">
+                  {
+                    sweater.map(sweaterInfo => <Sweater key={sweaterInfo.key} sweaterInfo={sweaterInfo}></Sweater>)
+                  }
+                </div>
+              </div>
+            </div>
     
-      {/* <button onClick={handleAddProduct}>add products</button> */}
-    </div>
+            {/* <button onClick={handleAddProduct}>add products</button> */}
+          </div>
+          <SupportShiping/>
+          <NewsletterContact/>
+          <Footer/>
+          <CopyRight/>
+        </div>
+    </>
   );
 };
 

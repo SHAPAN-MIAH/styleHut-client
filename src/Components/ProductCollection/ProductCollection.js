@@ -7,27 +7,7 @@ const ProductCollection = () => {
     <>
       <div className="container mt-4">
         <div className="row">
-          <div className="col-md-4">
-            <a href="">
-            <div className="productCollectionDiv">
-            <img src={img} alt=""/>
-            </div>
-            </a>
-          </div>
-          <div className="col-md-4">
-            <a href="">
-            <div className="productCollectionDiv">
-            <img src={img} alt=""/>
-            </div>
-            </a>
-          </div>
-          <div className="col-md-4">
-            <a href="">
-            <div className="productCollectionDiv">
-            <img src={img} alt=""/>
-            </div>
-            </a>
-          </div>
+          
         </div>
       </div>
     </>

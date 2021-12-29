@@ -25,6 +25,7 @@ Img {
   background-color: white;
   font-size: 50px;
   color: rgb(177, 177, 177);
+  margin-top: -70px;
 }
 .leftArrowBtn {
   margin-left: -30px;

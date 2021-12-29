@@ -1,25 +1,25 @@
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { faCartPlus, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faCartPlus, faEye, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import './Sweater.css'
+import React from 'react'
+import { useHistory } from 'react-router';
+import './ManJacket.css'
 
-const Sweater = (props) => {
-  console.log(props)
-  const { name, price, imagesUrl, _id} =props.sweaterInfo;
+const ManJacket = (props) => {
+  const { name, price, imagesUrl, _id} = props.menJacket;
 
   const history = useHistory()
-  const handelSweaterDetail = id => {
-    console.log("clicked", id );
-    history.push(`/sweaterDetail/${id}`)
+
+  const handleHoodieDetails = id => {
+    console.log("clicked", id);
+    history.push(`/hoodieDetail/${id}`)
+
   }
 
   return (
     <div>
-      <div className="sweaterDiv">
-        <span onClick={ () => handelSweaterDetail(_id)} >
-          <div className="sweaterImg">
+      <div className="jacketDiv">
+        <span onClick={() => handleHoodieDetails(_id)}>
+          <div className="jacketImg">
             <img  src={imagesUrl.imageUrl1} alt=""/>
           </div>
         </span>
@@ -30,12 +30,12 @@ const Sweater = (props) => {
         </div>
       </div>
       <div>
-        <small className="sweater-name">{name}</small>
+        <small className="jacket-name">{name}</small>
         <br/>
         <small className="price">${price}</small>
       </div>
     </div>
-  );
-};
+)  
+}
 
-export default Sweater;
+export default ManJacket

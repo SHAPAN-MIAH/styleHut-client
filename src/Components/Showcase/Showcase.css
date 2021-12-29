@@ -71,6 +71,14 @@ img {
   position: relative;
   cursor: pointer;
 }
+.braDiv img,
+.winterDressDiv img {
+  transition: all 0.3s ease-in;
+}
+.braDiv:hover img,
+.winterDressDiv:hover img {
+  transform: scale(1.07);
+}
 .braDiv::before,
 .winterDressDiv::before {
   position: absolute;
