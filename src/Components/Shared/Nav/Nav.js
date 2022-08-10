@@ -1,7 +1,7 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import logo from "../../assets/images/stylehut-logo3.png";
+import logo from "../../../assets/images/stylehut-logo3.png";
 import './Nav.css'
 
 
@@ -57,22 +57,22 @@ const Nav = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>Hoodies</span>
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>T-Shirt</span>
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>Shirt</span>
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>Pant</span>
                     </a>
                   </li>
@@ -80,12 +80,12 @@ const Nav = () => {
                     {/* <hr className="dropdown-divider" /> */}
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>Watch</span>
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/mens/jacket">
                       <span>Shoes</span>
                     </a>
                   </li>
@@ -133,7 +133,7 @@ const Nav = () => {
                       <span>Night Dress</span>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a className="dropdown-item" href="/women/hoodie">
                       <span>Bodysuit</span>
                     </a>
@@ -147,7 +147,7 @@ const Nav = () => {
                     <a className="dropdown-item" href="/women/hoodie">
                       <span>Bra</span>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     {/* <hr className="dropdown-divider" /> */}
                   </li>

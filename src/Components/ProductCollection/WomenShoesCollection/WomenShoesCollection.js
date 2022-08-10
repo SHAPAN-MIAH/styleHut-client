@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import './WomenShoesCollection.css';
 import { useState } from 'react';
 import axios from 'axios';
-import Topbar from '../../Shared/Topbar';
-import Nav from './../../Shared/Nav';
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import NewsletterContact from '../../NewsletterContact/NewsletterContact';
 import Footer from '../../Shared/Footer/Footer';
@@ -14,6 +12,8 @@ import Shoes from './Shoes/Shoes';
 import SideBar from '../../Shared/SideBar/SideBar';
 import './WomenShoesCollection.css'
 import NewArrivals from './../../NewArrivals/NewArrivals';
+import Nav from './../../Shared/Nav/Nav';
+import Topbar from './../../Shared/Topbar/Topbar';
 
 const womenShoesCollections = [
 
@@ -236,7 +236,7 @@ const WomenShoesCollection = () => {
   const [shoesCollection, setShoesCollection] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/womenShoes")
+    fetch("https://protected-crag-98903.herokuapp.com/womenShoes")
       .then((res) => res.json())
       .then((data) => setShoesCollection(data));
   }, []);

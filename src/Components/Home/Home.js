@@ -11,11 +11,11 @@ import SweaterDetailsPage from "../ProductCollection/SweaterCollection/SweaterDe
 import SaleOff from "../SaleOff/SaleOff";
 import CopyRight from "../Shared/CopyRight/CopyRight";
 import Footer from "../Shared/Footer/Footer";
-import Nav from "../Shared/Nav";
-import Topbar from "../Shared/Topbar";
 import Showcase from "../Showcase/Showcase";
 import SupportShiping from "../SupportShipingPayment/SupportShiping";
 import WhatHot from "../WhatHot/WhatHot";
+import Topbar from './../Shared/Topbar/Topbar';
+import Nav from './../Shared/Nav/Nav';
 
 const Home = () => {
   return (

@@ -95,17 +95,19 @@ const Showcase = () => {
           </div>
           <div className="col-md-3">
             <div className="braDiv">
-              <img className="braImg" src={bra} alt="" />
+              <a href="/women/hoodie">
+                <img className="braImg" src={bra} alt="" />
+              </a>
               <div className="mt-5">
                 <h6>Spring <br/>Collection</h6>
-                {/* <button id="shopBtn">Shop Now</button> */}
               </div>
             </div>
             <div className="winterDressDiv">
+              <a href="/women/sweater">
               <img className="winterDressImg" src={winterDress} alt="" />
+              </a>
               <div className="mt-5">
                 <h6>Winter <br/>Collection</h6>
-                {/* <button id="shopBtn">Shop Now</button> */}
               </div>
             </div>
           </div>

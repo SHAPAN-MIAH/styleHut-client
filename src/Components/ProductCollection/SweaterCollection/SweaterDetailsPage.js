@@ -3,20 +3,20 @@ import { useParams } from 'react-router-dom';
 import NewsletterContact from '../../NewsletterContact/NewsletterContact';
 import CopyRight from '../../Shared/CopyRight/CopyRight';
 import Footer from '../../Shared/Footer/Footer';
-import Nav from '../../Shared/Nav';
-import Topbar from '../../Shared/Topbar';
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import SweaterDetails from './SweaterDetails';
 import './SweaterDetailPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import Topbar from './../../Shared/Topbar/Topbar';
+import Nav from './../../Shared/Nav/Nav';
 
 const SweaterDetailsPage = () => {
   const {id} = useParams();
   const [sweaterDetail, setSweaterDetail] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/sweater/${id}`)
+    fetch(`https://protected-crag-98903.herokuapp.com/sweater/${id}`)
       .then((res) => res.json())
       .then((data) => setSweaterDetail(data));
   }, []);

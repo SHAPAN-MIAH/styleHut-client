@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import NewsletterContact from '../../NewsletterContact/NewsletterContact';
 import CopyRight from '../../Shared/CopyRight/CopyRight';
 import Footer from '../../Shared/Footer/Footer';
-import Nav from '../../Shared/Nav';
 import SideBar from '../../Shared/SideBar/SideBar';
-import Topbar from '../../Shared/Topbar';
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import axios from 'axios';
 import Hoodie from './Hoodie';
 import './HoodiesCollection.css'
+import Topbar from './../../Shared/Topbar/Topbar';
+import Nav from './../../Shared/Nav/Nav';
+import { useSelector } from 'react-redux';
 
 const hoodieCollections = [
   {
@@ -134,20 +135,17 @@ const hoodieCollections = [
 
 const lasthoodie = [
   {
-    category: "Hoodie",
-    name: "Wine-track-star-velvet-hoodie",
+    category: "Hoodiee",
+    name: "Wine-track-star",
     price: 130,
-    imagesUrl: {
-      imageUrl1: "https://i.ibb.co/1L7XkZq/wine-track-star-velvet-hoodie.jpg",
-      imageUrl2: "https://i.ibb.co/Vmq49wY/wine-track-star-velvet-hoodie-1.jpg"
-    }
+   
   }
 ]
 
 const HoodiesCollection = () => {
 
   // const handleAddProduct = () => {
-  //   axios.post('http://localhost:5000/addHoodies', hoodieCollections)
+  //   axios.post('http://localhost:5000/addAllProducts', lasthoodie)
   //     .then(res => {
   //         alert('Product added successfully.')
   //     })
@@ -156,17 +154,28 @@ const HoodiesCollection = () => {
   const [hoodies, setHoodies] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/hoodies")
+    fetch("https://protected-crag-98903.herokuapp.com/hoodies")
       .then((res) => res.json())
       .then((data) => setHoodies(data));
   }, []);
+
+  const cartItems = useSelector((state) => {
+    return state.cart
+  })
 
   return (
     <>
       <div>
         <Topbar/>
         <Nav/>
+
         <div className="container">
+        {/* {
+          cartItems ?. length?
+          cartItems.map(item => <li key={item.id}>{item.name}</li>)
+          :
+          <p>Your cart is empty</p>
+        } */}
           <div class="row">
             <div className="col-md-3">
               <div className="sidebar-container">

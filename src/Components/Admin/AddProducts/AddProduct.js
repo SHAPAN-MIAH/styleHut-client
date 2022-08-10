@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "./AddProduct.css";
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import { useUserContext } from '../../LoginSignup/context/userContext';
 
 
 const AddProduct = () => {
@@ -29,12 +30,13 @@ const AddProduct = () => {
           imageUrlOne: imageUrl
       };
       console.log(productData)
-      axios.post('http://localhost:5000/addProducts', productData)
+      axios.post('https://protected-crag-98903.herokuapp.com/addAllProducts', productData)
       .then(res => {
           alert('Product added successfully.')
       })
   }
 
+  const { user, logoutUser } = useUserContext();
   return (
     <>
       <div className="AddTeamForm-container mt-5">
@@ -62,6 +64,11 @@ const AddProduct = () => {
             <button type="submit" className="ProductsAddBtn">Submit</button>
           </div>
         </form>
+
+
+          {/* <h2>Name : {user.displayName}</h2> */}
+        {/* <h2>Email : {user.email}</h2> */}
+        <button onClick={logoutUser}>Log out</button>
       </div>
     </>
   );

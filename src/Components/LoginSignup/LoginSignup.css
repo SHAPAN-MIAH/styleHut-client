@@ -1,83 +1,138 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.login-container {
+  margin-bottom: 0px;
+  color: #555555;
+}
+
+.login-register-content{
+  /* background-color: #f3f3f3; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.login-register-content h4{
+  margin-bottom: 30px;
+}
+
+.formContainer {
+  font-family: "Poppins", sans-serif;
+  width: 550px;
+  margin-top: 100px;
+  padding: 0px 40px;
+}
+
+.formContainer h5 {
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  width: 450px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  margin: 10px 0px;
+}
+
+.inputField1 {
+  width: 100%;
+}
+
+.i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-right: 4px;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+#submitBtn {
+  width: 200px;
+  border: none;
+  background: #fe3060;
+  color: white;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+#submitBtn:hover {
+  border: none;
+  background: #1b1464;
+  color: white;
+}
+
+.forgot{
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.loginToggle{
+  /* background-color: #f3f3f3; */
+  padding: 30px 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.loginToggle strong {
+  cursor: pointer;
+  color: #fe3060;
+}
+
+.loginToggle strong:hover {
+  color: #1b1464;
+}
+
+.loginImg{
+  width: 100%;
+  overflow: hidden;
+}
+.loginImg img{
+  width: auto;
+}
+
+.or{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.googleIcon{
+  width: 27px;
+  padding: 3px;
+  border: 1px solid #dddddd;
+}
 
 .google-btn {
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: #707070;
-  padding: 7px;
-  width: 350px;
-  margin: 10px;
-  /* border-radius: 30px; */
-  border: none;
-  box-shadow: 0 0 0 0.9px rgb(255, 255, 255),
-    0.3em 0.3em 0.3em rgba(150, 150, 150, 0.3);
+  margin: 20px;
   transition: all 0.5s;
-}
-.google-btn:hover {
-  background-color: #e6e6e6;
-  /* color: #1b1464; */
-  color: #818181;
-  box-shadow: 0 0 0 0.9px rgb(255, 255, 255),
-    0.3em 0.3em 0.3em rgba(150, 150, 150, 0.3);
+  color: #858585;
+  padding: px 0px;
+  width: 420px;
 }
 
 .google-btn .gIcon {
-  color: #fe3060;
+  color: #ffffff;
   margin: 0px 5px;
   font-size: 20px;
   transition: all 0.5s;
 }
 
 .google-btn:hover .gIcon {
-  color: #1b1464;
-}
-
-.login-container {
-  text-align: center;
-  /* margin: 50px 0px; */
-  margin-bottom: 0px;
-}
-
-.formContainer {
-  font-family: "Poppins", sans-serif;
-  width: 400px;
-  margin: auto;
-  margin-top: 50px;
-  padding: 70px 0px;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-.formContainer h5 {
-  text-align: left;
-  margin-left: 25px;
-  margin-bottom: 20px;
-}
-form input {
-  width: 350px;
-  margin-bottom: 15px;
-  padding: 5px 0px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid lightgray;
-}
-#submitBtn {
-  border: none;
-  background: #707070;
-  color: white;
-}
-#submitBtn:hover {
-  border: none;
-  background: #da7b00;
-  color: white;
-}
-
-.loginToggle strong {
-  cursor: pointer;
-  color: #da7b00;
-}
-.loginImg {
-  width: 525px;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

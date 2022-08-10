@@ -36,7 +36,7 @@ img {
   color: #696969;
 }
 .braImg {
-  width: 580px;
+  width: auto;
   margin-left: -70px;
   position: relative;
   margin-top: 10px;

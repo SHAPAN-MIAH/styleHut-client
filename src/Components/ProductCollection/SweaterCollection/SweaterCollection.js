@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import NewsletterContact from '../../NewsletterContact/NewsletterContact';
 import CopyRight from '../../Shared/CopyRight/CopyRight';
 import Footer from '../../Shared/Footer/Footer';
-import Nav from '../../Shared/Nav';
-import Topbar from '../../Shared/Topbar';
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import Sweater from './Sweater';
 import "./SweaterCollection.css"
@@ -12,6 +10,8 @@ import "./SweaterCollection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import SideBar from '../../Shared/SideBar/SideBar';
+import Topbar from './../../Shared/Topbar/Topbar';
+import Nav from './../../Shared/Nav/Nav';
 
 const sweatersCollection = [
   {
@@ -416,7 +416,7 @@ const SweaterCollection = () => {
   const [sweater, setSweater] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sweaters")
+    fetch("https://protected-crag-98903.herokuapp.com/sweaters")
       .then((res) => res.json())
       .then((data) => setSweater(data));
   }, []);

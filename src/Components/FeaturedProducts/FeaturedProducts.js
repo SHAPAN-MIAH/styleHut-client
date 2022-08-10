@@ -8,30 +8,40 @@ import './FeaturedProducts.css'
 const FeaturedProducts = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const [products, setProducts] = useState([]);
+  const [jackets, setJackets] = useState([]);
+  const [sweaters, setSweaters] = useState([]);
+  const [hoodies, setHoodies] = useState([]);
+  const [shoes, setShoes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/menJackets")
+    fetch("https://protected-crag-98903.herokuapp.com/menJackets")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sweaters")
+    fetch("https://protected-crag-98903.herokuapp.com/sweaters")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setSweaters(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/hoodies")
+    fetch("https://protected-crag-98903.herokuapp.com/hoodies")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setHoodies(data));
   }, []);
   
   useEffect(() => {
-    fetch("http://localhost:5000/womenShoes")
+    fetch("https://protected-crag-98903.herokuapp.com/womenShoes")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setShoes(data));
   }, []);
+
+
+  // const allProducts = jackets;
+  // setProducts(jackets)
+
+  // console.log(allProducts)
 
   return (
     <>

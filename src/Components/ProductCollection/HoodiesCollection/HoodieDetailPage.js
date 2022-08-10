@@ -5,18 +5,18 @@ import { useParams } from 'react-router-dom';
 import NewsletterContact from '../../NewsletterContact/NewsletterContact';
 import CopyRight from '../../Shared/CopyRight/CopyRight';
 import Footer from '../../Shared/Footer/Footer';
-import Nav from '../../Shared/Nav';
-import Topbar from '../../Shared/Topbar';
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import HoodieDetails from './HoodieDetails';
 import './HoodieDetailPage.css'
+import Topbar from './../../Shared/Topbar/Topbar';
+import Nav from './../../Shared/Nav/Nav';
 
 const HoodieDetailPage = () => {
   const {id} = useParams();
   const [hoodieDetail, setHoodieDetail] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/hoodie/${id}`)
+    fetch(`https://protected-crag-98903.herokuapp.com/hoodie/${id}`)
       .then((res) => res.json())
       .then((data) => setHoodieDetail(data));
   }, []);

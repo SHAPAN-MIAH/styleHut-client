@@ -5,11 +5,11 @@ import React, { useEffect, useState } from 'react'
 import NewsletterContact from '../../NewsletterContact/NewsletterContact'
 import CopyRight from '../../Shared/CopyRight/CopyRight'
 import Footer from '../../Shared/Footer/Footer'
-import Nav from '../../Shared/Nav'
 import SideBar from '../../Shared/SideBar/SideBar'
-import Topbar from '../../Shared/Topbar'
 import SupportShiping from '../../SupportShipingPayment/SupportShiping';
 import ManJacket from './ManJacket'
+import Topbar from './../../Shared/Topbar/Topbar';
+import Nav from './../../Shared/Nav/Nav';
 
 
 const jacketCollections = [
@@ -160,7 +160,7 @@ export default function ManJacketCollection() {
   const [menJacket, setMenJacket] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/menJackets")
+    fetch("https://protected-crag-98903.herokuapp.com/menJackets")
       .then((res) => res.json())
       .then((data) => setMenJacket(data));
   }, []);
@@ -192,7 +192,6 @@ export default function ManJacketCollection() {
                     <option className="option" value="">Most Popular</option>
                     <option className="option" value="">High Price</option>
                     <option className="option" value="">Low Price</option>
-                    
                   </select>
 
                   <div className="form-check">
